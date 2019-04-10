@@ -9,8 +9,8 @@ const  Contact=()=> {
       <div className="contact-header">
         <h2>Contact</h2>
       </div>
-      <Row >
-        <Col xl={6} md={6} sm={6}>
+      <div className='contact-flex' >
+        <div className='contact-form'>
           <form action="">
             <div>
               <input
@@ -42,11 +42,11 @@ const  Contact=()=> {
             </div>
             <button className="input-5">Send Message</button>
           </form>
-        </Col>
-        <Col className="contact-or" xl={1} md={1} sm={1}>
+        </div>
+        <div className="contact-or" xl={1} md={1} sm={1}>
           OR
-        </Col>
-        <Col xl={5} md={5} sm={5} className="contact-address">
+        </div>
+        <div  className="contact-address">
           <h2>You can find us here</h2>
           <p>
             <FaHome /> Jl.Danau Bratan sekian Nomer sekian,sawojajar Malang
@@ -65,8 +65,8 @@ const  Contact=()=> {
           <p>
             <FaPhone /> (+62)8816723813
           </p>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </div>
   );
 }

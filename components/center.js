@@ -4,20 +4,29 @@ import {Row,Col} from 'react-bootstrap';
 
 const Center=()=> {
   return (
-    <div>
-      <Row>
-      <Col>
-    <img className="center-image" src="https://static.vecteezy.com/system/resources/previews/000/123/574/large_2x/mountainous-cityscape-vector-illustration.jpg" alt="" />
+    <div className="center-component ">
+      
+          <div className="center-image-grid">
+            <img
+              className="center-image"
+              src="https://image.freepik.com/free-vector/modern-megapolis-night-glowing-buildings-ferris-wheel-cartoon-style-neon-colors_1441-2079.jpg"
+            />
+          </div>
        
-      </Col>
-      <Col>
-         <h1>City of Love</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi aperiam eveniet assumenda expedita molestiae, deleniti minima ea commodi quia.</p>
-      </Col>
+       
+          <div className="center-text">
+            <h3>City of Love</h3>
+            <p>
+              There's nowhere on Earth quite like Venice: Its canals,
+              labyrinth of car-free cobblestone streets, and hidden
+              passageways are perfect for wandering. Hail a water taxi or
+              gondola to wind through the city and, if you have time, get out
+              of the historic center and head for the outer islands.
+            </p>
+          </div>
 
-
-      </Row>
+        
     </div>
-  )
+  );
 }
 export default Center

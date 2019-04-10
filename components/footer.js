@@ -1,57 +1,76 @@
 import React from 'react';
 import { Row, Col } from "react-bootstrap";
-import { FaFacebook, FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaGithub,
+  FaInstagram,
+ 
+  FaMailBulk
+} from "react-icons/fa";
+import { MdPhoneAndroid } from "react-icons/md";
 
 const Footer=()=> {
   return (
-    <div class="container">
-      <Row>
-        <Col>
+    <div>
+      <div className="footer-header">
+        <div className='follow-flex'>
           <h2> Follow Us</h2>
 
-          <a target="_blank" href="https:www.facebook.com">
+          <a
+            className="footer-a"
+            target="_blank"
+            href="https:www.facebook.com"
+          >
             <FaFacebook />
           </a>
-          <a target="_blank" href="https:www.twitter.com">
+          <a
+            className="footer-a"
+            target="_blank"
+            href="https:www.twitter.com"
+          >
             <FaTwitter />
           </a>
-          <a target="_blank" href="https:www.github.com">
+          <a className="footer-a" target="_blank" href="https:www.github.com">
             <FaGithub />
           </a>
-          <a target="_blank" href="https:www.instagram.com">
+          <a
+            className="footer-a"
+            target="_blank"
+            href="https:www.instagram.com"
+          >
             <FaInstagram />
           </a>
-        </Col>
-        <Col>
-          <h2>Contact Us</h2>
-          <div>
-            <div className='phone'>
-               <p>
-                 Phone
-               </p>
-               <p>1-888-123-456-89</p>
-            </div>
-            <div classNmae="email">
-              <p>Example@gmail.com</p>
-            </div>
-          </div>
-        </Col>
-        <Col>
+        </div>
+        <div className='contacts-flex'>
+        <h2>Contact Us</h2>
+        <p>Mobile-No: 1-888-888-888</p>
+        <p>Email: example@gmail.com</p>
+        </div>
+        <div className="info-flex">
           <h3>Information</h3>
           <p>
-            <a href="#">About Us</a>
+            <a className="footer-b" href="#">
+              About Us
+            </a>
           </p>
           <p>
-            <a href="#">Help</a>
+            <a className="footer-b" href="#">
+              Help
+            </a>
           </p>
           <p>
-            <a href="#">Feedback</a>
+            <a className="footer-b" href="#">
+              Feedback
+            </a>
           </p>
           <p>
-            <a href="#">Terms and Conditions</a>
+            <a className="footer-b" href="#">
+              Terms and Conditions
+            </a>
           </p>
-        </Col>
-      </Row>
+        </div>
+      </div>
       <hr />
       <div id="copyright">
         <p>

@@ -1,10 +1,72 @@
 //Colors
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0;
+   font-family: 'Montserrat', sans-serif;
+}
 $primary-color: #189ad3;
 $button-color:#86ad19;
-
-.center-image {
-  width: 100%;
+.header{
+  margin-bottom:65px;
 }
+#nav-col{
+    background: $primary-color;
+    position:fixed;
+    z-index:100;
+    width: 100%;
+    top:0;
+   
+}
+.carosel-image{
+
+margin:auto;
+  width:100%;
+  background-size: cover;
+  background-position: center;
+}
+.navbar-color{
+    color:white !important;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right:20px !important;
+}
+.center-component{
+    background: $primary-color;
+    color:white;
+    display: flex;
+}
+.center-image-grid{
+  flex: 1;
+    padding:80px;
+}
+.center-image{
+    width: 100%;
+    
+}
+.center-text{
+  flex: 1;
+    padding:60px;
+    h3{
+        color:white;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 34px;
+    }
+}
+.navbar-color:hover{
+border-bottom:3px solid #E74C3C;
+  
+}
+.services-flex{
+  display:flex;
+}
+
 .services-col {
   text-align: center;
 }
@@ -29,10 +91,16 @@ $button-color:#86ad19;
   height: 100%;
   color: white;
 }
+.contact-flex{
+  display: flex;
+}
 
 .contact {
   background: $primary-color;
   padding: 30px;
+}
+.contact-form{
+  flex:8
 }
 .contact-header {
   text-align: center;
@@ -42,6 +110,7 @@ $button-color:#86ad19;
 
 .contact-address {
   color: white;
+  flex: 8;
 }
 .map {
   a {
@@ -53,6 +122,7 @@ $button-color:#86ad19;
     color:white;
     font-size:25px;
     padding-top:30px;
+    flex:1
    
    
 }
@@ -91,7 +161,169 @@ form {
     outline:none;
     background:$button-color;
 }
+.follow-flex{
+  flex:1;
+  
+  padding:20px;
+}
+.contacts-flex{
+  flex:1;
+   padding:20px;
+}
+.info-flex{
+  flex:1;
+   padding:20px;
+}
 #copyright{
     text-align: center;
     padding:25px;
+}
+.footer-header{
+    text-align: left;
+    margin-top:30px;
+    padding:30px;
+    padding-bottom:20px;
+    margin-left:80px;
+    display: flex;
+}
+.footer-a{
+    display: inline-block;
+    padding:20px;
+    padding-left:0px;
+    font-size: 30px;
+}
+
+
+.footer-b:hover{
+    text-decoration: none;
+    color:$primary-color
+}
+
+
+
+@media (max-width:900px){
+ .center-component{
+   flex-direction: column;
+ }
+ .contact-flex{
+   flex-direction: column;
+ }
+  .center-image-grid{
+    padding:90px;
+    padding-bottom:10px;
+  }
+  .center-text{
+    font-size:27px;
+  }
+  .services-flex{
+    flex-wrap:wrap;
+    font-size: 30px;
+  }
+   .services-col{
+    margin-bottom: 80px;
+    font-size: 28px;
+  }
+  .contact-form{
+    font-size:30px;
+  }
+  .contact-address{
+    padding:30px;
+    font-size: 28px;
+    text-align: center
+  }
+  .contact-or{
+   text-align: center;
+    padding:0px;
+    
+ 
+  }
+  
+
+}
+@media(max-width:768px){
+  .form-inputs{
+    display:inline-block;
+    width:100%;
+  }
+  .input-5{
+    width:100%;
+  }
+  .footer-header{
+    flex-direction: column;
+    text-align: center;
+    margin-top:15px;
+    padding:30px;
+    margin-left:10px;
+    font-size:25px;
+  }.navbar-color{
+    font-size:18px;
+    padding-right:0px;
+  }
+  .follow-flex{
+    border-bottom: 1px solid grey;
+    font-size: 25px;
+  }
+  .contacts-flex{
+    border-bottom: 1px solid grey;
+  }
+  .contact-or{
+    margin-top:50px;
+  }
+  .footer-a{
+  padding-right:60px;
+  font-size:60px;
+  }
+   #copy-right{
+    font-size:18px;
+  }
+}
+@media(max-width:500px){
+  .center-component{
+    flex-direction: column;
+  }
+  .center-image-grid{
+padding:20px;
+padding-bottom:10px;
+  }
+  .center-text{
+    font-size: 16px;
+  }
+  .services-heading{
+    font-size: 20px;
+  }
+  .services-col{
+    margin-bottom: 40px;
+    font-size:20px;
+  }
+   .form-inputs{
+    display:inline-block;
+    width:100%;
+    font-size:20px;
+  }
+  .input-5{
+    width:100%;
+  }
+  form{
+    padding:20px;
+  }
+   .footer-header{
+    flex-direction: column;
+    text-align: center;
+    margin-top:15px;
+    padding:30px;
+    margin-left:10px;
+  }
+  .follow-flex{
+    border-bottom: 1px solid grey;
+  }
+  .contacts-flex{
+    border-bottom: 1px solid grey;
+  }
+  .footer-a{
+  padding-right:50px;
+  font-size:50px;
+  }
+  #copy-right{
+    font-size:28px;
+  }
 }

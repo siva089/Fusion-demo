@@ -1,7 +1,5 @@
 import React from "react";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-
 
 import {
   Collapse,
@@ -33,20 +31,26 @@ import {
   }
   render() {
     return (
-      <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Fusion Informatics</NavbarBrand>
+      <div class="header">
+        <Navbar id="nav-col" light expand="md">
+          <NavbarBrand href="/">
+            Fusion Informatics
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink className="navbar-color" href="/">
+                  Home
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Destination</NavLink>
+                <NavLink className="navbar-color" href="">
+                  Destination
+                </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+                <DropdownToggle className="navbar-color" nav caret>
                   Ittinary
                 </DropdownToggle>
                 <DropdownMenu right>
@@ -57,10 +61,14 @@ import {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="/">Review</NavLink>
+                <NavLink className="navbar-color" href="/">
+                  Review
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">Contact</NavLink>
+                <NavLink className="navbar-color" href="/">
+                  Contact
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>

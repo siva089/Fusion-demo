@@ -12,36 +12,36 @@ const Services=()=> {
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
      
-      <Row>
-        <Col className="services-col">
+      <div className='services-flex'>
+        <div className="services-col">
           <div className="services-icon1">
             <FaLaptop className="icon1" />
           </div>
           <p>Fully Responsive</p>
           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-        </Col>
-        <Col className="services-col">
+        </div>
+        <div className="services-col">
           <div className="services-icon1">
             <IoMdSettings className="icon1" />
           </div>
           <p>Easy Customize</p>
           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-        </Col>
-        <Col className="services-col">
+        </div>
+        <div className="services-col">
           <div className="services-icon1">
             <FaMap className="icon1" />
           </div>
           <p>Seo Ready</p>
           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-        </Col>
-        <Col className="services-col">
+        </div>
+        <div className="services-col">
           <div className="services-icon1">
             <FaHeart className="icon1" />
           </div>
           <p>Made With Love</p>
           <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </div>
   );
 }

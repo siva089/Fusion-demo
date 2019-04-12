@@ -59,7 +59,7 @@ margin:auto;
   border:none;
   color:white;
   background:rgb(94,146,201);
-  margin-top:20px;
+  margin-top:40px;
 
   
 }
@@ -310,7 +310,7 @@ form {
 }
 @media(max-width:768px){
   #carosel-h{
-    font-size:28px;
+    font-size:38px;
     letter-spacing: 1px;
   }
   .form-inputs{
@@ -360,9 +360,7 @@ form {
   #brand-sub{
     display:inline;
   }
-  #carosel-button{
-    margin:0px;
-  }
+ 
 }
 @media(max-width:500px){
   .center-component{

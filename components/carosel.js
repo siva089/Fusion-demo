@@ -7,7 +7,7 @@ const Carosel=()=>{
         <Carousel>
           <Carousel.Item>
             <img 
-              height={400}
+              height={440}
               className="carosel-image"
               className="d-block w-100"
               src="https://cdn.pixabay.com/photo/2016/10/22/17/46/scotland-1761292_960_720.jpg "
@@ -27,7 +27,7 @@ const Carosel=()=>{
           </Carousel.Item>
           <Carousel.Item>
             <img
-              height={400}
+              height={440}
               className="carosel-image"
               className="d-block w-100"
               src="https://cdn.pixabay.com/photo/2016/10/22/17/46/scotland-1761292_960_720.jpg"
@@ -47,7 +47,7 @@ const Carosel=()=>{
           </Carousel.Item>
           <Carousel.Item>
             <img
-              height={400}
+              height={440}
               className="carosel-image"
               className="d-block w-100"
               src="https://cdn.pixabay.com/photo/2016/10/22/17/46/scotland-1761292_960_720.jpg"

@@ -58,7 +58,8 @@ margin:auto;
   outline: none;
   border:none;
   color:white;
-  background:rgb(94,146,201)
+  background:rgb(94,146,201);
+  margin-top:20px;
 
   
 }
@@ -358,6 +359,9 @@ form {
   }
   #brand-sub{
     display:inline;
+  }
+  #carosel-button{
+    margin:0px;
   }
 }
 @media(max-width:500px){

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from "react-bootstrap";
+
 import {
   FaFacebook,
   FaTwitter,
@@ -8,13 +8,13 @@ import {
  
   FaMailBulk
 } from "react-icons/fa";
-import { MdPhoneAndroid } from "react-icons/md";
+import { IoIosMail, IoIosCall } from "react-icons/io";
 
 const Footer=()=> {
   return (
     <div>
       <div className="footer-header">
-        <div className='follow-flex'>
+        <div className="follow-flex">
           <h2> Follow Us</h2>
 
           <a
@@ -42,10 +42,22 @@ const Footer=()=> {
             <FaInstagram />
           </a>
         </div>
-        <div className='contacts-flex'>
-        <h2>Contact Us</h2>
-        <p>Mobile-No: 1-888-888-888</p>
-        <p>Email: example@gmail.com</p>
+        <div className="contacts-flex">
+          <h2>Contact Us</h2>
+          <div id="us-flex">
+            <div id="us-1">
+            <IoIosCall />
+              <p className="us-note">
+                Mobile-No:<span id="mobile">1-888-888-888</span>
+              </p>
+            </div>
+            <div id="us-1">
+            <IoIosMail />
+              <p className="us-note">
+                Email: <span id="mobile">example@gmail.com</span>
+              </p>
+            </div>
+          </div>
         </div>
         <div className="info-flex">
           <h3>Information</h3>

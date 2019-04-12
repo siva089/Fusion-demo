@@ -33,8 +33,8 @@ import {
     return (
       <div class="header">
         <Navbar id="nav-col" light expand="md">
-          <NavbarBrand href="/">
-            Fusion Informatics
+          <NavbarBrand id="brand" href="/">
+            Fusion <span id="brand-sub">Informatics</span>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

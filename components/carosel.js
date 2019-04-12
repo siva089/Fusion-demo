@@ -6,47 +6,63 @@ const Carosel=()=>{
       <div>
         <Carousel>
           <Carousel.Item>
-            <img
+            <img 
               height={400}
               className="carosel-image"
               className="d-block w-100"
-              src="https://image.freepik.com/free-vector/pano-building-abstract-blue_72787-222.jpg"
+              src="https://cdn.pixabay.com/photo/2016/10/22/17/46/scotland-1761292_960_720.jpg "
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3>React js</h3>
-              <p>Most Trending React FrameWork</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              height={400}
-              className="carosel-image"
-              className="d-block w-100"
-              src="https://image.freepik.com/free-vector/night-flights-from-city-airport-cartoon_1441-2729.jpg"
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Graph Ql</h3>
-              <p>A best Alternative to REST Api's</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              height={400}
-              className="carosel-image"
-              className="d-block w-100"
-              src="https://image.freepik.com/free-vector/miami-skyline-design-concept-business-travel-tourism-presentation_1284-9049.jpg"
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Node Js</h3>
+              <h1 id="carosel-h">
+                LETS GET <span id="carosel-h-sub">LOST</span>{" "}
+              </h1>
+              <p>Malang will never disappointed you</p>
               <p>
-                Node.js's npm Is Now The Largest Package Registry in the
-                World
+                From every step you took you will be amazed and suddenly
+                fallin love with malang
               </p>
+              <button id="carosel-button">SET ITTINERY NOW</button>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              height={400}
+              className="carosel-image"
+              className="d-block w-100"
+              src="https://cdn.pixabay.com/photo/2016/10/22/17/46/scotland-1761292_960_720.jpg"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h1 id="carosel-h">
+                LETS GET <span id="carosel-h-sub">LOST</span>{" "}
+              </h1>
+              <p>Malang will never disappointed you</p>
+              <p>
+                From every step you took you will be amazed and suddenly
+                fallin love with malang
+              </p>
+              <button id="carosel-button">SET ITTINERY NOW</button>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              height={400}
+              className="carosel-image"
+              className="d-block w-100"
+              src="https://cdn.pixabay.com/photo/2016/10/22/17/46/scotland-1761292_960_720.jpg"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h1 id="carosel-h">
+                LETS GET <span id="carosel-h-sub">LOST</span>{" "}
+              </h1>
+              <p>Malang will never disappointed you</p>
+              <p>
+                From every step you took you will be amazed and suddenly
+                fallin love with malang
+              </p>
+              <button id="carosel-button">SET ITTINERY NOW</button>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

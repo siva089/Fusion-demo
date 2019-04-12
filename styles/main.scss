@@ -5,7 +5,7 @@
     padding:0px;
     box-sizing: border-box;
 }
-body{
+body,h1,h2,h3,span,p{
     margin: 0;
     padding:0;
    font-family: 'Montserrat', sans-serif;
@@ -13,10 +13,23 @@ body{
 $primary-color: #189ad3;
 $button-color:#86ad19;
 .header{
-  margin-bottom:65px;
+  margin-bottom:70px;
 }
+#brand{
+  margin-left:80px;
+  color: $primary-color;
+
+}
+#brand-sub{
+  display: block;
+  color:rgb(124, 218, 142)
+}
+
 #nav-col{
-    background: $primary-color;
+    background:white;
+   margin: 0;
+   padding:0;
+   vertical-align: middle;
     position:fixed;
     z-index:100;
     width: 100%;
@@ -30,14 +43,38 @@ margin:auto;
   background-size: cover;
   background-position: center;
 }
+#carosel-h{
+ 
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: serif;
+  }
+  #carosel-h-sub{
+    color:rgb(94, 146, 201)
+  }
+#carosel-button{
+  padding:10px;
+  border-radius: 20px;
+  outline: none;
+  border:none;
+  color:white;
+  background:rgb(94,146,201)
+
+  
+}
+.carousel-caption{
+top:0px;
+font-size:20px;
+letter-spacing: 2px;
+}
 .navbar-color{
-    color:white !important;
-    font-weight: bold;
+    color:black !important;
+    font-weight:normal ;
     font-size: 20px;
-    padding-right:20px !important;
+    text-align: center;
 }
 .center-component{
-    background: $primary-color;
+   
     color:white;
     display: flex;
 }
@@ -47,20 +84,29 @@ margin:auto;
 }
 .center-image{
     width: 100%;
+    height:350px
     
 }
 .center-text{
   flex: 1;
     padding:60px;
     h3{
-        color:white;
+        color:$primary-color;
         font-weight: bold;
         letter-spacing: 2px;
-        font-size: 34px;
+        font-size: 54px;
+        span{
+          color:#7CDA8E;
+        }
     }
+    color:gray;
+    letter-spacing: 1px;
+    font-size: 19px;
+    word-spacing: 10px;
 }
-.navbar-color:hover{
-border-bottom:3px solid #E74C3C;
+.navbar-color:hover,.navbar-color:active{
+border:0.5px solid $primary-color;
+border-radius: 50px;
   
 }
 .services-flex{
@@ -151,8 +197,27 @@ form {
 .input-4{
     width:100%;
 }
+#button-flex{
+  display: flex;
+  justify-content: flex-end;
+
+}
+#us-flex{
+  display:flex;
+  justify-content: space-between;
+  margin-top:40px;
+}
+.us-note{
+  display: inline;
+  padding-left: 10px;
+
+}
+#mobile{
+  display:block;
+ padding:15px;
+}
 .input-5{
-    width:30%;
+    width:40%;
     border-radius: 10px;
     padding:10px;
     cursor: pointer;
@@ -214,7 +279,9 @@ form {
   }
   .center-text{
     font-size:27px;
+   
   }
+  
   .services-flex{
     flex-wrap:wrap;
     font-size: 30px;
@@ -241,6 +308,10 @@ form {
 
 }
 @media(max-width:768px){
+  #carosel-h{
+    font-size:28px;
+    letter-spacing: 1px;
+  }
   .form-inputs{
     display:inline-block;
     width:100%;
@@ -275,6 +346,18 @@ form {
   }
    #copy-right{
     font-size:18px;
+  }
+  #us-flex{
+    flex-direction: column;
+  }
+  #brand{
+    margin-left:10px;
+    padding-top:20px;
+      font-size:24px;
+      font-weight: bold;
+  }
+  #brand-sub{
+    display:inline;
   }
 }
 @media(max-width:500px){
